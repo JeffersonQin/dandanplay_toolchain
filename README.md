@@ -6,6 +6,7 @@
 	- [ddp_restart_server](#ddp_restart_server)
 		- [配置方法](#配置方法-1)
 		- [使用方法](#使用方法-1)
+	- [终止脚本](#终止脚本)
 
 # Introduction
 
@@ -71,3 +72,17 @@ api_token = <配置token>
 如果需要开机自动启动，直接将`start_server_wsl.bat`的**快捷方式**扔到`启动`文件夹即可。
 
 其他使用方式，请参考代码。
+
+## 终止脚本
+
+查看进程：
+
+```bash
+ps -ef
+```
+
+找到需要中止的进程PID然后终止:
+
+```bash
+kill -9 <PID>
+```
