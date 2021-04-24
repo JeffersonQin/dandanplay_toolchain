@@ -1,0 +1,1 @@
+nohup python3 ddp_restart_server.py 1>logfile.out 2>&1 &
