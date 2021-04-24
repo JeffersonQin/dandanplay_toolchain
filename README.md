@@ -56,7 +56,7 @@ nohup python3 ddp_api_server.py &
 
 ### 配置方法
 
-请将`ddp_restart.bat`, `ddp_restart_server.py`, `start_server_wsl.sh`置于同一文件夹内。
+请将`ddp_restart.bat`, `ddp_restart_server.py`, `start_server_wsl.sh`, `start_server_wsl.bat`置于同一文件夹内。
 
 端口及`token`配置：在`ddp_restart_server.py`中
 
@@ -66,13 +66,8 @@ run_port = <配置port>
 api_token = <配置token>
 ```
 
-配置启动脚本：在`start_server_wsl.bat`中修改路径
-```
-wsl <path-to-start_server_wsl.sh>
-```
-
 ### 使用方法
 
-如果需要开机自动启动，直接将`start_server_wsl.bat`扔到`启动`文件夹即可。
+如果需要开机自动启动，直接将`start_server_wsl.bat`的**快捷方式**扔到`启动`文件夹即可。
 
 其他使用方式，请参考代码。
